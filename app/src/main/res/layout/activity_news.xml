@@ -1,0 +1,215 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/rl_main2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <!--头部-->
+        <RelativeLayout
+            android:id="@+id/top_tab2"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="#323542">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="消息"
+                android:textColor="#FFFFFF"
+                android:textSize="30dp" />
+        </RelativeLayout>
+        <!--中部内容区-->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingTop="50dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#FFF8DC">
+
+                <LinearLayout
+                    android:id="@+id/ll_news"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:layout_marginTop="40dp"
+                    android:background="#FFFFFF"
+                    android:orientation="horizontal"
+                    android:padding="10dp">
+
+                    <ImageView
+                        android:layout_width="50dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="20dp"
+                        android:src="@drawable/haizi" />
+
+                    <TextView
+                        android:layout_width="100dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="10dp"
+                        android:paddingTop="10dp"
+                        android:text="通知"
+                        android:textSize="20dp" />
+
+                    <ImageButton
+                        android:layout_width="170dp"
+                        android:layout_height="20dp"
+                        android:background="#ffff"
+                        android:layout_marginTop="12dp"
+                        android:paddingLeft="120dp"
+                        android:src="@drawable/you" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ll_bad"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:layout_marginTop="150dp"
+                    android:background="#ffffff"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="100dp"
+                        android:layout_height="match_parent"
+                        android:paddingLeft="20dp"
+                        android:src="@drawable/renwu" />
+                    <LinearLayout
+                        android:layout_width="200dp"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+                        <LinearLayout
+                            android:layout_width="150dp"
+                            android:layout_height="40dp"
+                            android:orientation="horizontal">
+                    <TextView
+                        android:layout_width="50dp"
+                        android:layout_height="30dp"
+                        android:gravity="center"
+                        android:paddingTop="10dp"
+                        android:text="huihui"
+                        android:textColor="#EE7621" />
+                    <TextView
+                        android:layout_width="70dp"
+                        android:layout_height="30dp"
+                        android:paddingTop="10dp"
+                        android:textColor="#CDC9C9"
+                        android:text="评论了你" />
+                        </LinearLayout>
+                    <TextView
+                        android:layout_width="190dp"
+                        android:layout_height="match_parent"
+                        android:textSize="10dp"
+                        android:text="楼主在吗？我在天河好像见过该孩子."/>
+                    </LinearLayout>
+                    <TextView
+                        android:id="@+id/txt_bad"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:paddingTop="10dp"
+                        android:text="45分钟"/>
+                </LinearLayout>
+            </RelativeLayout>
+        </RelativeLayout>
+        <!--底部菜单-->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <!--android:layout_alignParentBottom="true"在父类底部,
+             android:gravity="center_vertical"
+             限定它里面的内容要垂直居中显示,
+             android:baselineAligned="true",
+             允许用户调整它内容的基线
+            -->
+            <LinearLayout
+                android:id="@+id/ll_bottom_tab2"
+                android:layout_width="match_parent"
+                android:layout_height="54dp"
+                android:layout_alignParentBottom="true"
+                android:baselineAligned="true"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <RelativeLayout
+                    android:id="@+id/rl_home2"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="#323542">
+                    <!--android:layout_centerHorizontal="true"
+                    用于相对布局（RelativeLayout）的子控件居中-->
+                    <ImageView
+                        android:id="@+id/iv_home2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:src="@drawable/home" />
+
+                    <TextView
+                        android:id="@+id/tv_home2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/iv_home2"
+                        android:layout_centerHorizontal="true"
+                        android:text="首页"
+                        android:textColor="#ffff"
+                        android:textSize="18sp" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rl_news2"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="#323542">
+
+                    <ImageView
+                        android:id="@+id/iv_news2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:src="@drawable/news" />
+
+                    <TextView
+                        android:id="@+id/tv_news2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/iv_news2"
+                        android:layout_centerHorizontal="true"
+                        android:text="消息"
+                        android:textColor="#ffff"
+                        android:textSize="18sp" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rl_me2"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:background="#323542">
+
+                    <ImageView
+                        android:id="@+id/iv_me2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
+                        android:src="@drawable/me" />
+
+                    <TextView
+                        android:id="@+id/tv_me2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/iv_me2"
+                        android:layout_centerHorizontal="true"
+                        android:text="我的"
+                        android:textColor="#ffff"
+                        android:textSize="18sp" />
+                </RelativeLayout>
+            </LinearLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+</FrameLayout>

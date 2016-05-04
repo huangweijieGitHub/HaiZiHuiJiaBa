@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <!--第一个-->
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:background="#FFF8DC"
+        android:layout_height="120dp">
+        <ImageView
+            android:id="@+id/image_tu"
+            android:layout_width="90dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:src="@drawable/ltu"/>
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="5dp"
+            android:layout_weight="1">
+            <TextView
+                android:id="@+id/text_ti"
+                android:layout_width="match_parent"
+                android:layout_height="80dp"
+                android:layout_weight="1"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="15dp"
+                android:textSize="20dp"
+                android:textColor="#000" />
+            <TextView
+                android:id="@+id/text_ben"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:textColor="#FF8247"
+                android:layout_marginLeft="5dp" />
+        </LinearLayout>
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="300dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_marginLeft="30dp"
+            android:layout_marginTop="15dp">
+            <TextView
+                android:id="@+id/text_time"
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:textColor="#FF8247"
+                android:layout_marginTop="10dp" />
+            <Button
+                android:id="@+id/btn_lei"
+                android:layout_width="50dp"
+                android:layout_height="25dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/activity_register_yanzheng"
+                android:textColor="#fff" />
+            <TextView
+                android:id="@+id/text_lu"
+                android:layout_width="match_parent"
+                android:layout_height="25dp"
+                android:layout_marginLeft="17dp"
+                android:textColor="#FF8247"
+                android:paddingTop="5dp" />
+        </LinearLayout>
+    </LinearLayout>
+    <TextView
+        android:id="@+id/text_xian"
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:layout_marginTop="112dp"
+        android:background="#FFF8DC"/>
+    <!--<Button-->
+    <!--android:layout_width="50dp"-->
+    <!--android:layout_height="25dp"-->
+    <!--android:layout_marginLeft="20dp"-->
+    <!--android:layout_marginTop="5dp"-->
+    <!--android:background="@drawable/activity_forget_bgbtn"-->
+    <!--android:textColor="#ffff"-->
+    <!--android:text="线索"/>-->
+</LinearLayout>

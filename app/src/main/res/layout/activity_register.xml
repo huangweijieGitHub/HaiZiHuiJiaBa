@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#323542"
+    android:orientation="vertical"
+    android:padding="10dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/imageBtn_fanhui"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="#323542"
+            android:src="@drawable/fanhui" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:paddingRight="50dp"
+            android:text="注册"
+            android:textColor="#ffffff"
+            android:textSize="30dp" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:paddingLeft="40dp"
+        android:paddingTop="30dp"
+        android:paddingBottom="80dp"
+        android:paddingRight="40dp">
+        <EditText
+            android:id="@+id/edt_Number"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:singleLine="true"
+            android:paddingLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_weight="1"
+            android:textColor="#ffff"
+            android:textColorHint="#fff"
+            android:hint="手机号码"
+            android:background="@drawable/kongbai" />
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          android:layout_weight="1"
+          android:layout_marginTop="5dp"
+          android:layout_marginBottom="5dp">
+          <EditText
+              android:id="@+id/edt_AuthCode"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:singleLine="true"
+              android:paddingLeft="10dp"
+              android:layout_marginRight="10dp"
+              android:layout_weight="1"
+              android:textColor="#ffff"
+              android:textColorHint="#fff"
+              android:hint="输入验证码"
+              android:background="@drawable/kongbai" />
+          <Button
+              android:id="@+id/btn_AuthCode"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:layout_weight="1"
+              android:background="@drawable/activity_register_yanzheng"
+              android:text="获取验证码"
+              android:textColor="#ffffff"
+              android:textSize="25dp" />
+      </LinearLayout>
+        <EditText
+            android:id="@+id/edt_Name"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:singleLine="true"
+            android:paddingLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:layout_weight="1"
+            android:textColor="#ffff"
+            android:textColorHint="#fff"
+            android:hint="用户名"
+            android:background="@drawable/kongbai" />
+        <!--android:hint="请输入验证码"虚拟文字-->
+        <EditText
+            android:id="@+id/edt_Pwd"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:singleLine="true"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:paddingLeft="10dp"
+            android:layout_weight="1"
+            android:textColor="#ffff"
+            android:textColorHint="#fff"
+            android:hint="密码"
+            android:inputType="textPassword"
+            android:background="@drawable/kongbai" />
+        <EditText
+            android:id="@+id/edt_Pwd2"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:singleLine="true"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:paddingLeft="10dp"
+            android:layout_weight="1"
+            android:textColor="#ffff"
+            android:textColorHint="#fff"
+            android:hint="确认密码"
+            android:inputType="textPassword"
+            android:background="@drawable/kongbai" />
+        <Button
+            android:id="@+id/btn_register"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/activity_forget_bgbtn"
+            android:text="注     册"
+            android:textColor="#ffffff"
+            android:textSize="30dp" />
+    </LinearLayout>
+</LinearLayout>
